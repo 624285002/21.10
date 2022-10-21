@@ -16,5 +16,7 @@ html_8="""
 st.markdown(html_8,unsafe_allow_html=True)
 st.markdown("")
 dx=pd.read_excel('./data/gen.xlsx')
-dx=pd.read_excel('./data/iris.csv')
 st.dataframe(dx)
+
+dz=pd.read_csv('./data/iris.csv')
+st.dataframe(dz)
