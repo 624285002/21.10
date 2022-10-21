@@ -20,3 +20,5 @@ st.dataframe(dx)
 
 dz=pd.read_csv('./data/iris.csv')
 st.dataframe(dz)
+
+st.sidebar.markdown("# วิเคราห์รายบุคคล")
