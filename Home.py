@@ -24,7 +24,7 @@ dx=[dt1,dt2,dt3,dt4]
 dx2=pd.DataFrame(dx,index=["d1","d2","d3","d4"])
 
 if st.button("แสดงการจินตทัศน์ข้อมูล"):
-   st.pie(dx2)
+   st.pie_chart(dx2)
    st.button("ไม่แสดงข้อมูล")
 else:
     st.write("ไม่แสดงข้อมูล")
