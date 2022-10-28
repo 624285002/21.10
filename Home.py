@@ -21,4 +21,8 @@ st.dataframe(dx)
 dz=pd.read_csv('./data/iris.csv')
 st.dataframe(dz)
 
+dy=dz.head(10)
+st.bar_chart(dy)
+st.balloons()
+
 st.sidebar.markdown("# วิเคราห์รายบุคคล")
