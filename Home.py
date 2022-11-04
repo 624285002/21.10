@@ -52,15 +52,15 @@ if st.button("ทำนายผล"):
     input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
     prediction = loaded_model.predict(input_data_reshaped)
     st.write(prediction)
+    if prediction == 'Versicolor':
+        st.write(st.image('./pic/versicolor.jpg'))
+    elif prediction == 'Setosa':
+        st.write(st.image('./pic/setosa.jpg'))
+    else:
+        st.write(st.image('./pic/virginica.jpg'))
 
     st.button("ไม่แสดงข้อมูล")
 else:
     st.write("ไม่แสดงข้อมูล")
 
 
-if prediction == 'Versicolor':
-        st.write(st.image('./pic/versicolor.jpg'))
-elif prediction == 'Setosa':
-        st.write(st.image('./pic/setosa.jpg'))
-else:
-        st.write(st.image('./pic/virginica.jpg'))
