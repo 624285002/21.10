@@ -56,3 +56,11 @@ if st.button("ทำนายผล"):
     st.button("ไม่แสดงข้อมูล")
 else:
     st.write("ไม่แสดงข้อมูล")
+
+
+if prediction == 'Versicolor':
+        st.write(st.image('./pic/versicolor.jpg'))
+elif prediction == 'Setosa':
+        st.write(st.image('./pic/setosa.jpg'))
+else:
+        st.write(st.image('./pic/virginica.jpg'))
